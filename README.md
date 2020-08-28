@@ -19,8 +19,8 @@ Computer components - cases, motherboards, CPUs, Ram, Graphics cards and Hard dr
 The hell if I know what shape this madness will take.
 
 ## -Post MVP-
-Login 
-Shopping cart
+Login \
+Shopping cart\
 Instant notice if something isn’t compatible 
 
 ## -Project Schedule-
