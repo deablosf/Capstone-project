@@ -24,6 +24,6 @@ Shopping cart
 Instant notice if something isn’t compatible 
 
 ## -Project Schedule-
-First thing the DataBase 
-Then Java 
+First thing the DataBase\
+Then Java\
 After that I crap myself in react! 
