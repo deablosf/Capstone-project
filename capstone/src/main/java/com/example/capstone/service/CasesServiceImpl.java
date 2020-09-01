@@ -1,7 +1,6 @@
 package com.example.capstone.service;
 
 import com.example.capstone.models.Cases;
-
 import com.example.capstone.repositories.CasesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CasesServiceImpl implements CaseService{
     @Autowired
-    private CasesRepository casesRepository;
+    CasesRepository casesRepository;
 
     @Override
     public Iterable<Cases> listCases() {

@@ -4,25 +4,31 @@ import javax.persistence.*;
 
 @Entity
 @Table
-public class GraphicsCards {
+public class VideoCards {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private String name;
 
+    @Column
     private String size;
 
+    @Column
     private int memoryGB;
 
+    @Column
     private Long memoryBusBit;
 
+    @Column
     private String slotInterface;
 
+    @Column
     private double cost;
 
-    public GraphicsCards() {}
+    public VideoCards() {}
 
     public Long getId() {
         return id;
