@@ -1,6 +1,7 @@
 package com.example.capstone.models;
 
 import javax.persistence.*;
+
 @Entity
 @Table(name = "cases")
 public class Cases {

@@ -17,11 +17,6 @@ public class VideoCardsServiceImpl implements VideoCardsService{
     }
 
     @Override
-    public VideoCards createVideoCards() {
-        return null;
-    }
-
-    @Override
     public VideoCards createVideoCards(VideoCards videoCards) {
         return videoCardsRepository.save(videoCards);
     }

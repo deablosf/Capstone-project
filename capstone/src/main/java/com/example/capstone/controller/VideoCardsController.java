@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/videoCards")
+@RequestMapping("/videocards")
 public class VideoCardsController {
 
     @Autowired
@@ -20,7 +20,7 @@ public class VideoCardsController {
 
     @PostMapping
     public VideoCards createVideoCards(@RequestBody VideoCards videoCards) {
-        return videoCardsService.createVideoCards();
+        return videoCardsService.createVideoCards(videoCards);
     }
 
     @DeleteMapping("/{videoCardsId}")

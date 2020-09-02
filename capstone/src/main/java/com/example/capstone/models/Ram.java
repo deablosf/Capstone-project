@@ -3,7 +3,7 @@ package com.example.capstone.models;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "ram")
 public class Ram {
     @Id
     @Column
