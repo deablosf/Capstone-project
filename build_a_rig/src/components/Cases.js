@@ -1,20 +1,19 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let cases = "http://localhost:8080/cases";
 class Cases extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
-            Info: [],
+            info: [],
             cases: "http://localhost:8080/cases"
         }
 
     }
 
 
-    componentDidMount() {
+   componentDidMount() {
         console.log("The api has been grabbed")
         axios.get(this.state.cases)
         .then(response => {
@@ -39,28 +38,26 @@ class Cases extends Component {
     
 
     render() {
-        
-       
         return (
-            
-            <div>
-                
-                {/* {
-                    this.state.info.map(cases => {
+            <div className="Main">
+                <h1>Cases</h1>
+                {
+                    this.state.info.map(caseList => {
                         return (
-                            <div className="fullReadOut">
-                                <a href={cases.href}> <img src={cases.imageurl}/> </a>
+                            <div className="itemDisplay">
+                                <img src={caseList.imageurl}/>
                                 
                                 <div className="details">
-                                    <h2 className="foodTitles"> <a className="foodNames" href={cases.href}>{cases.name}</a> </h2>
-                                    
-                                    <h3 className="ingred"> Cost: $ {cases.cost} </h3>
+                                    <h2 className="itemTitle"> {caseList.name}</h2>
+                                    <h3 className="size">Size </h3>
+                                    <h3 className="cost"> Cost: $ {caseList.cost} </h3>
                                 </div>
 
                             </div>
                         )
                     })
-                } */}
+                }
+                
             </div>
         )
     }

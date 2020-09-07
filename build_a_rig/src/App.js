@@ -9,10 +9,11 @@ function App() {
         <div className="menu">
           <div>ABOUT</div>
           <div>START</div>
-          <Cases />
+          
         </div>
         <div className="title">BUILD A RIG</div>
       </header>
+      <Cases />
     </div>
   );
 }
