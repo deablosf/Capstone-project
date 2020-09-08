@@ -33,7 +33,7 @@ After that I crap myself in react!
 #### Under Construction!
 
 
-# -Jornal-
+# -Journal-
 
 ## -Day unknown-
 It took a full 4 days to get the database and Java talking to each other. I still don't know what happened.
