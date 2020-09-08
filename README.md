@@ -27,3 +27,6 @@ Instant notice if something isn’t compatible
 First thing the DataBase\
 Then Java\
 After that I crap myself in react! 
+
+## -Jornal-
+It took a full 4 days to get the database and Java talking to each other. I still don't know what happened.
