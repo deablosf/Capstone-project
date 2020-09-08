@@ -13,12 +13,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="menu">
-          <div>ABOUT</div>
+          <div>WELCOME</div>
           <div>START</div>
-          
         </div>
         <div className="title">BUILD A RIG</div>
       </header>
+
+      <div className="welcome">
+        <div className="welTitle"><h1>WELCOME</h1></div>
+        <div><p>Welcome to build a Rig, a site to help computer enthuseists build the computers they desire. This site helps by alllowing youto see whither the parts you want are compatable with eachother.</p></div>
+      </div>
+
 
       <VideoCards />
       <footer>

@@ -13,7 +13,7 @@ class Cases extends Component {
 
     }
 
-
+    // When component mounts 
    componentDidMount() {
         console.log("The api has been grabbed")
         axios.get(this.state.cases)
