@@ -5,7 +5,8 @@ Once more unto the Breach!
 Helps you figure out what you’ll need and how much it’ll cost when building your own computer. All while avoiding noob mistakes like component incompatibility, under powered power supplies and case size mismeasurement. This is aimed more towards beginnners to the computer building scene but expert rig builders can use this with no problem.
 
 ## -MVP-
-Computer components - cases, motherboards, CPUs, Ram, Graphics cards and Hard drives. Three - five items each and a compatible tab. Add these things to a list and have the compatibility checked and the cost added.
+Computer components - cases, motherboards, CPUs, Ram, Graphics cards and Hard drives. Three - five items each and a compatible tab. Add these things to a list and have the compatibility checked and the cost added. \
+I'll Be using intellij to build the Java code that will construct the database. I'll be using Postico to interact with said database. After Thos two things are running smooth I'll create a react app and build the front end of the site. 
 
 ## -Java models-
 ### cases 
