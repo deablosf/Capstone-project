@@ -21,6 +21,9 @@ function App() {
       </header>
 
       <VideoCards />
+      <footer>
+        
+      </footer>
     </div>
   );
 }

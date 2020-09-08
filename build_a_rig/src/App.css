@@ -63,3 +63,12 @@ img {
   width: 18vw;
   
 }
+
+
+/* ___________ FOOTER ____________ */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #282c34;
+}
