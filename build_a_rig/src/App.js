@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
 import Cases from './components/Cases';
+import Cpu from './components/Cpu';
+import MotherBoards from './components/MotherBoards';
+import Ram from './components/Ram';
+import Storage from './components/Storage';
+import VideoCards from './components/VideoCards';
+
 
 function App() {
   return (
@@ -13,8 +19,8 @@ function App() {
         </div>
         <div className="title">BUILD A RIG</div>
       </header>
-      
-      <Cases />
+
+      <VideoCards />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let VideoCards = "http://localhost:8080/videocards";
-class videocards extends Component {
+let videoCards = "http://localhost:8080/videocards";
+class VideoCards extends Component {
     constructor (props) {
         super(props)
 
