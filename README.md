@@ -28,5 +28,13 @@ First thing the DataBase\
 Then Java\
 After that I crap myself in react! 
 
-## -Jornal-
+# -Jornal-
+
+## -Day unknown-
 It took a full 4 days to get the database and Java talking to each other. I still don't know what happened.
+
+## -Day Weekend-
+Had to go to work, couldn't work on project. But I did think of a way to present the components.
+
+## -Day: Sept 07-
+Nothing but the last thing on my schedule has worked out as I thought. I'm just writing code hoping to hit the minimum to pass. I realy wish the react mod didn't crash and burn.
