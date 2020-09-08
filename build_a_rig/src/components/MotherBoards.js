@@ -7,7 +7,7 @@ class MotherBoards extends Component {
         super(props)
 
         this.state = {
-            Info: [],
+            info: [],
             motherboards: "http://localhost:8080/motherboards"
         }
 
@@ -43,17 +43,26 @@ class MotherBoards extends Component {
        
         return (
             
-            <div>
-                
-                {/* {
-                    this.state.info.map(cases => {
+            <div className="Main">
+                <h1>MotherBoards</h1>
+                {
+                    this.state.info.map(boardList => {
                         return (
-                            <div className="fullReadOut">
-                                 <img src={cases.imageurl}/>
+                            <div className="itemDisplay">
+                                
+                                <div className="details">
+                                    <input id="cases" type="checkbox" value={boardList} onChange={this.onSearchChange}/>
+                                    <img src={boardList.imageurl}/>
+                                    <h3 className="itemTitle"> {boardList.name}</h3>
+                                    <h4 className="size">Size: {boardList.size} </h4>
+                                    <h4 className="size">Max Memoey: {boardList.type} </h4>
+                                    <h3 className="cost"> Cost: $ {boardList.cost} </h3>
+                                </div>
+
                             </div>
-                        )
-                    })
-                } */}
+                            )
+                        })
+                    }
             </div>
         )
     }

@@ -7,7 +7,7 @@ class Storage extends Component {
         super(props)
 
         this.state = {
-            Info: [],
+            info: [],
             storage: "http://localhost:8080/storage"
         }
 
@@ -29,17 +29,26 @@ class Storage extends Component {
        
         return (
             
-            <div>
-                
-                {/* {
-                    this.state.info.map(cases => {
+            <div className="Main">
+                <h1>STORAGE</h1>
+                {
+                    this.state.info.map(storageList => {
                         return (
-                            <div className="fullReadOut">
-                                 <img src={cases.imageurl}/>
+                            <div className="itemDisplay">
+                                
+                                <div className="details">
+                                    <input id="cases" type="checkbox" value={storageList} onChange={this.onSearchChange}/>
+                                    <img src={storageList.imageurl}/>
+                                    <h3 className="itemTitle"> {storageList.name}</h3>
+                                    <h4 className="size">TB: {storageList.storageSize /1024} </h4>
+                                    <h4 className="size">Drive Type: {storageList.type} </h4>
+                                    <h3 className="cost"> Cost: $ {storageList.cost} </h3>
+                                </div>
+
                             </div>
-                        )
-                    })
-                } */}
+                            )
+                        })
+                    }
             </div>
         )
     }

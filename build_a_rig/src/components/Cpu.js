@@ -7,7 +7,7 @@ class Cpu extends Component {
         super(props)
 
         this.state = {
-            Info: [],
+            info: [],
             cpus: "http://localhost:8080/cpus"
         }
 
@@ -28,18 +28,26 @@ class Cpu extends Component {
         
        
         return (
-            
-            <div>
-                
-                {/* {
-                    this.state.info.map(cases => {
+                <div className="Main">
+                <h1>CPUs</h1>
+                {
+                    this.state.info.map(cpuList => {
                         return (
-                            <div className="fullReadOut">
-                                 <img src={cases.imageurl}/>
+                            <div className="itemDisplay">
+                                
+                                <div className="details">
+                                    <input id="cases" type="checkbox" value={cpuList} onChange={this.onSearchChange}/>
+                                    <img src={cpuList.imageurl}/>
+                                    <h3 className="itemTitle"> {cpuList.name}</h3>
+                                    <h4 className="size">GHz: {cpuList.frequency} </h4>
+                                    <h4 className="size">Cores: {cpuList.cores} </h4>
+                                    <h3 className="cost"> Cost: $ {cpuList.cost} </h3>
+                                </div>
+
                             </div>
-                        )
-                    })
-                } */}
+                            )
+                        })
+                    }
             </div>
         )
     }

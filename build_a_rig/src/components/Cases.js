@@ -7,7 +7,8 @@ class Cases extends Component {
 
         this.state = {
             info: [],
-            cases: "http://localhost:8080/cases"
+            cases: "http://localhost:8080/cases",
+            selectedCase: ""
         }
 
     }
@@ -23,6 +24,11 @@ class Cases extends Component {
         .catch(error => {console.log(error)})
     }
 
+
+    onSearchChange = (event) => {
+        this.setState({selectedCase: event.target.value});
+        console.log(this.state.selectedCase)
+    }
     // collectItems = () =>{
     //     // event.preventDefault()
         
@@ -41,15 +47,18 @@ class Cases extends Component {
         return (
             <div className="Main">
                 <h1>Cases</h1>
+                <h3> The existing: {this.state.selectedCase}</h3>
+                <h3> The existing: {this.state.selectedCase.name}</h3>
                 {
                     this.state.info.map(caseList => {
                         return (
                             <div className="itemDisplay">
-                                <img src={caseList.imageurl}/>
                                 
                                 <div className="details">
-                                    <h2 className="itemTitle"> {caseList.name}</h2>
-                                    <h3 className="size">Size </h3>
+                                    <input id="cases" type="checkbox" value={caseList} onChange={this.onSearchChange}/>
+                                    <img src={caseList.imageurl}/>
+                                    <h3 className="itemTitle"> {caseList.name}</h3>
+                                    <h4 className="size">Size: {caseList.size} </h4>
                                     <h3 className="cost"> Cost: $ {caseList.cost} </h3>
                                 </div>
 

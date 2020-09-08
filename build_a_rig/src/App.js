@@ -13,6 +13,7 @@ function App() {
         </div>
         <div className="title">BUILD A RIG</div>
       </header>
+      
       <Cases />
     </div>
   );

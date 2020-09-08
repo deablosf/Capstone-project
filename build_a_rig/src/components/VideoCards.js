@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 let VideoCards = "http://localhost:8080/videocards";
-class MotherBoards extends Component {
+class videocards extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
-            Info: [],
+            info: [],
             videocards: "http://localhost:8080/videocards"
         }
 
@@ -43,20 +43,29 @@ class MotherBoards extends Component {
        
         return (
             
-            <div>
-                
-                {/* {
-                    this.state.info.map(cases => {
+            <div className="Main">
+                <h1>VIDEO CARDS</h1>
+                {
+                    this.state.info.map(vidList => {
                         return (
-                            <div className="fullReadOut">
-                                 <img src={cases.imageurl}/>
+                            <div className="itemDisplay">
+                                
+                                <div className="details">
+                                    <input id="cases" type="checkbox" value={vidList} onChange={this.onSearchChange}/>
+                                    <img src={vidList.imageurl}/>
+                                    <h3 className="itemTitle"> {vidList.name}</h3>
+                                    <h4 className="size">Size: {vidList.size} </h4>
+                                    <h4 className="size">Memoey GBs: {vidList.memoryGB} </h4>
+                                    <h3 className="cost"> Cost: $ {vidList.cost} </h3>
+                                </div>
+
                             </div>
-                        )
-                    })
-                } */}
+                            )
+                        })
+                    }
             </div>
         )
     }
 }
 
-export default MotherBoards
+export default VideoCards

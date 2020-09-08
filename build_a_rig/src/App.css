@@ -48,3 +48,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* ______________ Listewd ITEMS ________________ */
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  height: 20vh;
+  width: 18vw;
+  
+}
