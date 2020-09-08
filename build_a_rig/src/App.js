@@ -22,7 +22,9 @@ function App() {
 
       <VideoCards />
       <footer>
-        
+        <div className="credits">
+          Built in a Rush by <span>Sam Carter</span>
+        </div>
       </footer>
     </div>
   );

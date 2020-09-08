@@ -68,7 +68,15 @@ img {
 /* ___________ FOOTER ____________ */
 
 footer {
-  height: 10vh;
+  height: 15vh;
   width: 100vw;
   background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credits {
+  color: cadetblue;
+  font-size: 14px;
 }
