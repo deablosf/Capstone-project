@@ -25,7 +25,7 @@ function App() {
       </div>
 
 
-      <VideoCards />
+      <Cases />
       <footer>
         <div className="credits">
           Built in a Rush by <span>Sam Carter</span>
