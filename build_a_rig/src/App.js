@@ -22,7 +22,7 @@ function App() {
         <div>
         <header className="App-header">
           <div className="menu">
-            <div><Link to="">B-a-R</Link></div>
+            <div><Link to="home">B-a-R</Link></div>
             <div><Link to="case">Cases</Link></div>
             <div><Link to="boards">MotherBoards</Link></div>
             <div><Link to="cpu">CPUs</Link></div>
@@ -41,6 +41,9 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL.  */}
          <Switch>
+           <Route path="home">
+             <App />
+           </Route>
           <Route path="/case">
             <Cases />
           </Route>
