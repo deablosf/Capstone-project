@@ -30,7 +30,7 @@ class Ram extends Component {
        
         return (
             
-            <div className="Main">
+            <div className="main">
                 <h1>RAM</h1>
                 {
                     this.state.info.map(ramList => {

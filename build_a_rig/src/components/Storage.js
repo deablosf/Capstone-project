@@ -29,7 +29,7 @@ class Storage extends Component {
        
         return (
             
-            <div className="Main">
+            <div className="main">
                 <h1>STORAGE</h1>
                 {
                     this.state.info.map(storageList => {

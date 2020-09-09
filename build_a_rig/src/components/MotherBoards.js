@@ -56,7 +56,7 @@ class MotherBoards extends Component {
                                     <img src={boardList.imageurl}/>
                                     <h3 className="itemTitle"> {boardList.name}</h3>
                                     <h4 className="size">Size: {boardList.size} </h4>
-                                    <h4 className="size">Max Memory: {boardList.type} </h4>
+                                    <h4 className="size">Max Memory: {boardList.maxmemory} </h4>
                                     <h3 className="cost"> Cost: $ {boardList.cost} </h3>
                                 </div>
 

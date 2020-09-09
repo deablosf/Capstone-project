@@ -43,7 +43,7 @@ class VideoCards extends Component {
        
         return (
             
-            <div className="Main">
+            <div className="main">
                 <h1>VIDEO CARDS</h1>
                 {
                     this.state.info.map(vidList => {

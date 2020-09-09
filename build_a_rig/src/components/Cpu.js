@@ -28,7 +28,7 @@ class Cpu extends Component {
         
        
         return (
-                <div className="Main">
+                <div className="main">
                 <h1>CPUs</h1>
                 {
                     this.state.info.map(cpuList => {
