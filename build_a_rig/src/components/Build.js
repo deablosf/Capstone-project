@@ -24,7 +24,7 @@ class Build extends Component {
             selectedCpu: '',
             selectedRam: '',
             selectedVideo: '',
-            selectedStorage: '',
+            selectedStorage: ''
         }
 
     }
