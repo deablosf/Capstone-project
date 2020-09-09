@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-image: url(./assets/wallpaper.jpg);
+  background-size: 110%;
 }
 
 .App-logo {
@@ -25,7 +28,7 @@
 }
 
 .menu{
-  width: 30vw;
+  width: 100vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -33,6 +36,7 @@
 }
 
 .title{
+  height: 10vh;
   width: 50vw;
   display: flex;
   justify-content: center;
@@ -45,13 +49,17 @@
 
 .welcome {
   display: flex;
+  height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(161, 230, 71);
+  font-weight: 800;
+  background-color: #282c34; opacity: 0.9;
 }
 
 .main {
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +101,7 @@ img {
 /* ___________ FOOTER ____________ */
 
 footer {
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   background-color: #282c34;
   display: flex;
