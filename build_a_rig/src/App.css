@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 30vh;
   background-image: url(./assets/wallpaper.jpg);
-  background-size: 110%;
+  background-size: 100%;
 }
 
 .App-logo {
@@ -49,9 +49,8 @@
 
 .welcome {
   display: flex;
-  height: 80vh;
+  height: 20vh;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: rgb(161, 230, 71);
   font-weight: 800;
@@ -64,6 +63,8 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  
+  ;
 }
 
 .text {
