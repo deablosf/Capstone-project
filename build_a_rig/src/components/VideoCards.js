@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let videoCards = "http://localhost:8080/videocards";
+//let videoCards = "http://localhost:8080/videocards";
 class VideoCards extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
             info: [],
-            videocards: "http://localhost:8080/videocards"
+            videocards: "https://nameless-falls-65963.herokuapp.com/videocards"
         }
 
     }

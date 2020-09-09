@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let ram = "http://localhost:8080/ram";
+//let ram = "http://localhost:8080/ram";
 class Ram extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
             info: [],
-            ram: "http://localhost:8080/ram"
+            ram: "https://nameless-falls-65963.herokuapp.com/ram"
         }
 
     }

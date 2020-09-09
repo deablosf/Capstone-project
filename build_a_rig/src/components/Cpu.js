@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let cpu = "http://localhost:8080/cpus";
+//let cpu = "http://localhost:8080/cpus";
 class Cpu extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
             info: [],
-            cpus: "http://localhost:8080/cpus"
+            cpus: "https://nameless-falls-65963.herokuapp.com/cpus"
         }
 
     }
