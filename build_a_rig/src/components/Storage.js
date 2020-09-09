@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-let store = "http://localhost:8080/storage";
+//let store = "http://localhost:8080/storage";
 class Storage extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
             info: [],
-            storage: "http://localhost:8080/storage"
+            storage: "https://nameless-falls-65963.herokuapp.com/storage"
         }
 
     }

@@ -21,11 +21,12 @@ function App() {
 
       <div className="welcome">
         <div className="welTitle"><h1>WELCOME</h1></div>
-        <div><p>Welcome to build a Rig, a site to help computer enthuseists build the computers they desire. This site helps by alllowing youto see whither the parts you want are compatable with eachother.</p></div>
+        <div className="text"><p>Welcome to build a Rig, a site to help computer enthuseists build the computers they desire. This site helps by alllowing youto see whither the parts you want are compatable with eachother.</p></div>
       </div>
 
 
       <Cases />
+      <MotherBoards />
       <footer>
         <div className="credits">
           Built in a Rush by <span>Sam Carter</span>

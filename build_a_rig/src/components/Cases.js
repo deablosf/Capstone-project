@@ -1,24 +1,30 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+
+// "http://localhost:8080/cases",
 class Cases extends Component {
     constructor (props) {
         super(props)
 
         this.state = {
             info: [],
-            cases: "http://localhost:8080/cases",
-            selectedCase: ""
+            cases: "https://nameless-falls-65963.herokuapp.com/cases",
+            selection: '',
+            selectedCase: '',
+            bob: ''
         }
 
     }
 
     // When component mounts 
-   componentDidMount() {
+   
+    componentDidMount() {
         console.log("The api has been grabbed")
         axios.get(this.state.cases)
         .then(response => {
             this.setState({info: response.data});
+            console.log(this.state.info)
         })
 
         .catch(error => {console.log(error)})
@@ -26,7 +32,8 @@ class Cases extends Component {
 
 
     onSearchChange = (event) => {
-        this.setState({selectedCase: event.target.value});
+        this.setState({selection: event.target.value});
+        //this.setState({selectedCase: this.state.info[this.state.selection - 1]})
         console.log(this.state.selectedCase)
     }
     // collectItems = () =>{
@@ -45,10 +52,9 @@ class Cases extends Component {
 
     render() {
         return (
-            <div className="Main">
+            <div className="main">
                 <h1>Cases</h1>
-                <h3> The existing: {this.state.selectedCase}</h3>
-                <h3> The existing: {this.state.selectedCase.name}</h3>
+                <div className="text">First lets choose a that we like. Please take notice of the prices and sizes. An average computer has a case size of "Medium" but most gaming computer case are "Large" to make room for the beefier Video cards.</div>
                 {
                     this.state.info.map(caseList => {
                         return (
