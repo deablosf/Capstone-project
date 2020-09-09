@@ -8,7 +8,10 @@ class Storage extends Component {
 
         this.state = {
             info: [],
-            storage: "https://nameless-falls-65963.herokuapp.com/storage"
+            storage: "https://nameless-falls-65963.herokuapp.com/storage",
+            selection: '',
+            selectedCase: '',
+            bob: ''
         }
 
     }
@@ -24,6 +27,12 @@ class Storage extends Component {
         .catch(error => {console.log(error)})
     }
 
+    onPick = (event) => {
+        this.setState({selection: event.target.value});
+        this.setState({selectedCase: this.state.info[this.state.selection - 1]})
+        console.log(this.state.selectedCase)
+    }
+
     render() {
         
        
@@ -31,13 +40,14 @@ class Storage extends Component {
             
             <div className="main">
                 <h1>STORAGE</h1>
+                <div className="text">What was once THICC metal bricks of data storage have become chips themselves; Storage A.K.A Hard Drives. This is what holds all your data; Photos, music, videos, Games and all manner of programs. Thanks to cloud storage and streaming; having a massive amount of storage is no longer a necessity. Unless your a Developer, Editor, Gamer, Pirate or digital creator of any type. Note the TB(TeraBytes, 1TB = 1000GB) and the Drive type which will effect how it connects to your MOTHERBOARD.</div>
                 {
                     this.state.info.map(storageList => {
                         return (
                             <div className="itemDisplay">
                                 
                                 <div className="details">
-                                    <input id="cases" type="checkbox" value={storageList} onChange={this.onSearchChange}/>
+                                    <input id="cases" type="checkbox" value={storageList} onChange={this.onPick}/>
                                     <img src={storageList.imageurl}/>
                                     <h3 className="itemTitle"> {storageList.name}</h3>
                                     <h4 className="size">TB: {storageList.storageSize /1024} </h4>

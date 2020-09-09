@@ -8,7 +8,10 @@ class Ram extends Component {
 
         this.state = {
             info: [],
-            ram: "https://nameless-falls-65963.herokuapp.com/ram"
+            ram: "https://nameless-falls-65963.herokuapp.com/ram",
+            selection: '',
+            selectedCase: '',
+            bob: ''
         }
 
     }
@@ -24,6 +27,11 @@ class Ram extends Component {
         .catch(error => {console.log(error)})
     }
 
+    onPick = (event) => {
+        this.setState({selection: event.target.value});
+        this.setState({selectedCase: this.state.info[this.state.selection - 1]})
+        console.log(this.state.selectedCase)
+    }
 
     render() {
         
@@ -32,13 +40,14 @@ class Ram extends Component {
             
             <div className="main">
                 <h1>RAM</h1>
+                <div className="text">Random Access Memory, in the old days you needed TONS of Ram in order to have your computer run faster than molassis. Any program stored in your STORAGE is moved to the Ram in order to make running is smoother. Take note ofthe Ram Chips number, most Ram chips are sold in pairs and the GB(GigaByts) is for one a single Ram chip</div>
                 {
                     this.state.info.map(ramList => {
                         return (
                             <div className="itemDisplay">
                                 
                                 <div className="details">
-                                    <input id="cases" type="checkbox" value={ramList} onChange={this.onSearchChange}/>
+                                    <input id="cases" type="checkbox" value={ramList} onChange={this.onPick}/>
                                     <img src={ramList.imageurl}/>
                                     <h3 className="itemTitle"> {ramList.name}</h3>
                                     <h4 className="size">GB: {ramList.capacityGB} </h4>

@@ -31,9 +31,9 @@ class Cases extends Component {
     }
 
 
-    onSearchChange = (event) => {
+    onPick = (event) => {
         this.setState({selection: event.target.value});
-        //this.setState({selectedCase: this.state.info[this.state.selection - 1]})
+        this.setState({selectedCase: this.state.info[this.state.selection - 1]})
         console.log(this.state.selectedCase)
     }
     // collectItems = () =>{
@@ -61,7 +61,7 @@ class Cases extends Component {
                             <div className="itemDisplay">
                                 
                                 <div className="details">
-                                    <input id="cases" type="checkbox" value={caseList} onChange={this.onSearchChange}/>
+                                    <input id="cases" type="checkbox" value={caseList.id} onChange={this.onPick}/>
                                     <img src={caseList.imageurl}/>
                                     <h3 className="itemTitle"> {caseList.name}</h3>
                                     <h4 className="size">Size: {caseList.size} </h4>
