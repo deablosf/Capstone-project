@@ -34,6 +34,7 @@ class Cases extends Component {
     onPick = (event) => {
         this.setState({selection: event.target.value});
         this.setState({selectedCase: this.state.info[this.state.selection - 1]})
+        this.setState({selectedCase: this.state.info[this.state.selection - 1]})
         console.log(this.state.selectedCase)
     }
     // collectItems = () =>{
