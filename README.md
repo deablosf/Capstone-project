@@ -29,8 +29,9 @@ First thing the DataBase\
 Then Java\
 After that I crap myself in react! 
 
-## -LINK-
+## -LINKs-
 #### Under Construction!
+Location of API https://nameless-falls-65963.herokuapp.com/  (cases, motherboards, cpus, ram, videocards, storage)
 
 
 # -Journal-
